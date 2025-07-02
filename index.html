@@ -9,13 +9,18 @@
 		<link rel="preload" href="./assets/fonts/Lato-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="assets/img/favicon.ico">
 		<title>Главная</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1751314803337"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1751314803337">
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1751498301302"></script>
+		<script type="module" crossorigin="" src="./js/arrowlink.min.js?v=1751498301302"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1751498301302">
+		<link rel="stylesheet" crossorigin="" href="./css/arrowlink.min.css?v=1751498301302">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1751498301302">
+		<link rel="stylesheet" crossorigin="" href="./css/block.min.css?v=1751498301302">
+		<link rel="stylesheet" crossorigin="" href="./css/articlecard.min.css?v=1751498301302">
 	</head>
 	<body>
 		<div class="wrapper">
 			<div class="marquee">
-				<div data-fls-marquee="">
+				<div data-fls-marquee="" data-fls-marquee-speed="500">
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan est in libero semper dignissim.
 			Integer
@@ -36,43 +41,20 @@
 						</a>
 						<div class="header__city" data-fls-dynamic=".menu__body-info-wrapper--first, 700, 0">
 							<div class="header__city-wrappper">
-								<butotn class="header__city-title --icon-small-arrow">
-									<span>Ростов-на-Дону</span>
-								</butotn>
+								<select name="form[]" data-fls-select="" data-fls-select-modif="header">
+									<option value="Ростов-на-Дону" selected>Ростов-на-Дону</option>
+									<option value="Краснодар">Краснодар</option>
+								</select>
 								<div class="header__cities" hidden>
 									<ul class="header__city-ul">
 										<li>
-											<a href="#">Калининград</a>
-										</li>
-										<li>
-											<a href="#">Белгород</a>
-										</li>
-										<li>
-											<a href="#">Самара</a>
-										</li>
-										<li>
-											<a href="#">Курган</a>
-										</li>
-										<li>
 											<a href="#">Краснодар</a>
-										</li>
-										<li>
-											<a href="#">Волгоград</a>
-										</li>
-										<li>
-											<a href="#">Красноярск</a>
-										</li>
-										<li>
-											<a href="#">Тюмень</a>
-										</li>
-										<li>
-											<a href="#">Севастополь</a>
 										</li>
 									</ul>
 								</div>
 							</div>
-							<p class="header__adress">ул. Варфоломеева 243а</p>
-							<a href="#" class="header__city-btn">Схема проезда</a>
+							<p class="header__adress adress-link">ул. Варфоломеева 243а</p>
+							<a href="https://yandex.ru/maps/39/rostov-na-donu/house/ulitsa_varfolomeyeva_243a/Z0AYcQZgSkQCQFptfX5yc3pkYw==/?ll=39.707638%2C47.232061&z=16" target="_blank" class="header__city-btn schema-link">Схема проезда</a>
 						</div>
 						<div class="header__working-hours">
 							<p>Пн-Пт с 8:00 до 18:00</p>
@@ -83,11 +65,11 @@
 								<img src="./assets/img/icons/whatsapp.svg" alt="whatsapp">
 								Whatsapp
 							</a>
-							<a href="#" data-fls-button="" class="header__red-btn button button--red button--18">Написать нам</a>
+							<a href="#" data-fls-button="" class="header__red-btn button button--red button--18" data-fls-popup-link="order">Написать нам</a>
 						</div>
 						<div class="header__red-button-block header__red-button-block--bold">
 							<a href="tel:+78633200322">+7 (863) 320-03-22</a>
-							<a href="#" data-fls-button="" class="header__red-btn button button--red button--18">Записаться</a>
+							<a href="#" data-fls-button="" class="header__red-btn button button--red button--18" data-fls-popup-link="order">Записаться</a>
 						</div>
 						<a href="#" class="button button--blue button--icon-cart"></a>
 					</div>
@@ -250,7 +232,7 @@
 												<img src="./assets/img/icons/whatsapp.svg" alt="whatsapp">
 												Whatsapp
 											</a>
-											<a href="#" data-fls-button="" class="header__red-btn button button--red button--18">Написать нам</a>
+											<a href="#" data-fls-button="" data-fls-popup-link="order" class="header__red-btn button button--red button--18">Написать нам</a>
 										</div>
 									</div>
 									<div class="menu__body-info-wrapper menu__body-info-wrapper--second">
@@ -260,7 +242,7 @@
 										</div>
 										<div class="header__red-button-block header__red-button-block--bold">
 											<a href="tel:+78633200322">+7 (863) 320-03-22</a>
-											<a href="#" data-fls-button="" class="header__red-btn button button--red button--18">Записаться</a>
+											<a href="#" data-fls-button="" data-fls-popup-link="order" class="header__red-btn button button--red button--18">Записаться</a>
 										</div>
 									</div>
 									<a href="#" class="button menu__cart button--blue button--icon-cart">Перейти в корзину</a>
@@ -923,7 +905,7 @@
 							<p class="form-block__subtitle">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget justo nec massa sollicitudin mattis.
 							</p>
-							<form action="#" data-fls-form="ajax" class="form-block__main">
+							<form action="#" data-fls-form-popup="thanks" data-fls-form="dev" class="form-block__main">
 								<input data-fls-input="" required data-fls-form-errtext="" autocomplete="off" type="text" name="form[]" placeholder="Введите ваши ФИО" class="input">
 								<input data-fls-input="" required data-fls-form-errtext="" data-fls-input-mask="+7 (999) 999-9999" autocomplete="off" type="text" name="form[]" placeholder="Введите ваш телефон" class="input">
 								<textarea data-fls-input="" required data-fls-form-errtext="" autocomplete="off" name="form[]" placeholder="Введите ваш вопрос" class="input"></textarea>
@@ -939,29 +921,6 @@
 							<img src="./assets/img/form-bg.svg" alt="Background">
 						</div>
 					</section>
-					<!--
-<section data-fls-block data-fls-formblock class="form-block form-block--small block">
-<div class="form-block__left">
-<p class="form-block__title">
-Задать вопрос
-</p>
-<form action="#" data-fls-form="ajax" class="form-block__main">
-<input data-fls-input required data-fls-form-errtext autocomplete="off" type="text" name="form[]"
-placeholder="Введите ваши ФИО" class="input">
-<input data-fls-input required data-fls-form-errtext data-fls-input-mask="+7 (999) 999-9999" autocomplete="off"
-type="text" name="form[]" placeholder="Введите ваш телефон" class="input">
-<button class="form-block__button button button--red">Отправить</button>
-<p class="form-block__info">
-Нажимая на «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь <a href="#">с
-политикой конфиденциальности</a>
-</p>
-</form>
-</div>
-<div class="form-block__right">
-<img src="@img/form-bg2.svg" alt="Background">
-</div>
-</section>
--->
 				</div>
 			</main>
 			<footer data-fls-footer="" class="footer">
@@ -975,25 +934,25 @@ type="text" name="form[]" placeholder="Введите ваш телефон" cla
 							</a>
 							<div class="footer__red-button-block footer__red-button-block--bold">
 								<a href="tel:+78633200322">+7 (863) 320-03-22</a>
-								<a href="#" data-fls-button="" class="footer__red-btn button button--red button--18">Записаться</a>
+								<a href="#" data-fls-button="" class="footer__red-btn button button--red button--18" data-fls-popup-link="order">Записаться</a>
 							</div>
 						</div>
 						<div class="footer__info-wrapper" data-fls-dynamic=".footer__nav-wrapper--mobile, 1000, 1,">
 							<div class="footer__red-button-block footer__red-button-block--bold">
 								<a href="tel:+78633200322">+7 (863) 320-03-22</a>
-								<a href="#" data-fls-button="" class="footer__red-btn button button--red button--18">Записаться</a>
+								<a href="#" data-fls-button="" class="footer__red-btn button button--red button--18" data-fls-popup-link="order">Записаться</a>
 							</div>
 							<div class="footer__red-button-block">
 								<a href="#">
 									<img src="./assets/img/icons/whatsapp.svg" alt="whatsapp">
 									Whatsapp
 								</a>
-								<a href="#" data-fls-button="" class="footer__red-btn button button--red button--18">Написать нам</a>
+								<a href="#" data-fls-button="" class="footer__red-btn button button--red button--18" data-fls-popup-link="order">Написать нам</a>
 							</div>
 							<div class="footer__city">
 								<p class="footer__city-title">Ростов-на-Дону</p>
-								<p class="footer__adress">ул. Варфоломеева 243а</p>
-								<a href="#" class="footer__city-btn">Схема проезда</a>
+								<p class="footer__adress adress-link">ул. Варфоломеева 243а</p>
+								<a href="https://yandex.ru/maps/39/rostov-na-donu/house/ulitsa_varfolomeyeva_243a/Z0AYcQZgSkQCQFptfX5yc3pkYw==/?ll=39.707638%2C47.232061&z=16" target="_blank" class="footer__city-btn schema-link">Схема проезда</a>
 							</div>
 							<div class="footer__working-hours">
 								<p>Пн-Пт с 8:00 до 18:00</p>
@@ -1121,6 +1080,42 @@ type="text" name="form[]" placeholder="Введите ваш телефон" cla
 					</nav>
 				</div>
 			</footer>
+		</div>
+		<div data-fls-popup="order" aria-hidden="true" class="popup">
+			<div data-fls-popup-wrapper="" class="popup__wrapper">
+				<div data-fls-popup-body="" class="popup__body">
+					<button data-fls-popup-close="" type="button" class="popup__close --icon-cross"></button>
+					<div data-fls-popup-content="" class="popup__main">
+						<p class="popup__title">Оформить заказ</p>
+						<p class="popup__subtitle">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget justo nec massa
+					sollicitudin mattis.
+						</p>
+						<form action="#" data-fls-form="ajax" class="form-block__main">
+							<input data-fls-input="" required data-fls-form-errtext="" autocomplete="off" type="text" name="form[]" placeholder="Введите ваши ФИО" class="input">
+							<input data-fls-input="" required data-fls-form-errtext="" data-fls-input-mask="+7 (999) 999-9999" autocomplete="off" type="text" name="form[]" placeholder="Введите ваш телефон" class="input">
+							<textarea data-fls-input="" required data-fls-form-errtext="" autocomplete="off" name="form[]" placeholder="Введите ваш вопрос" class="input"></textarea>
+							<button class="form-block__button button button--red">Отправить</button>
+							<p class="form-block__info">
+								Нажимая на «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь
+								<a href="#">с
+							политикой конфиденциальности</a>
+							</p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div data-fls-popup="thanks" aria-hidden="true" class="popup">
+			<div data-fls-popup-wrapper="" class="popup__wrapper">
+				<div data-fls-popup-body="" class="popup__body">
+					<button data-fls-popup-close="" type="button" class="popup__close --icon-cross"></button>
+					<div data-fls-popup-content="" class="popup__main">
+						<p class="popup__title">Ваше сообщение отправлено</p>
+						<button data-fls-popup-close="" class="form-block__button button button--red button--20">Закрыть</button>
+					</div>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>

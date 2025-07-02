@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preload" href="./assets/fonts/Lato-Semibold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Lato-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Lato-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="shortcut icon" href="assets/img/favicon.ico">
+		<title>Главная</title>
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1751498301301"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1751498301301">
+		<link rel="stylesheet" crossorigin="" href="./css/blog.min.css?v=1751498301301">
+		<link rel="stylesheet" crossorigin="" href="./css/pagination.min.css?v=1751498301301">
+		<link rel="stylesheet" crossorigin="" href="./css/breadcrumbs.min.css?v=1751498301301">
+		<link rel="stylesheet" crossorigin="" href="./css/articlecard.min.css?v=1751498301301">
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="marquee">
+				<div data-fls-marquee="" data-fls-marquee-speed="500">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan est in libero semper dignissim.
+			Integer
+			mattis. Lorem ipsum
+					</p>
+				</div>
+				<div class="marquee__container">
+					<a href="#" data-fls-button="" class="marquee__button button button--20">Новости</a>
+				</div>
+			</div>
+			<header data-fls-header="" class="header">
+				<div class="header__container">
+					<div class="header__top">
+						<a href="index.html" class="header__logo">
+							<picture>
+								<img alt="Симплекс" src="./assets/img/logo.webp">
+							</picture>
+						</a>
+						<div class="header__city" data-fls-dynamic=".menu__body-info-wrapper--first, 700, 0">
+							<div class="header__city-wrappper">
+								<select name="form[]" data-fls-select="" data-fls-select-modif="header">
+									<option value="Ростов-на-Дону" selected>Ростов-на-Дону</option>
+									<option value="Краснодар">Краснодар</option>
+								</select>
+								<div class="header__cities" hidden>
+									<ul class="header__city-ul">
+										<li>
+											<a href="#">Краснодар</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<p class="header__adress adress-link">ул. Варфоломеева 243а</p>
+							<a href="https://yandex.ru/maps/39/rostov-na-donu/house/ulitsa_varfolomeyeva_243a/Z0AYcQZgSkQCQFptfX5yc3pkYw==/?ll=39.707638%2C47.232061&z=16" target="_blank" class="header__city-btn schema-link">Схема проезда</a>
+						</div>
+						<div class="header__working-hours">
+							<p>Пн-Пт с 8:00 до 18:00</p>
+							<p>Сб-Вс - выходные</p>
+						</div>
+						<div class="header__red-button-block">
+							<a href="#">
+								<img src="./assets/img/icons/whatsapp.svg" alt="whatsapp">
+								Whatsapp
+							</a>
+							<a href="#" data-fls-button="" class="header__red-btn button button--red button--18" data-fls-popup-link="order">Написать нам</a>
+						</div>
+						<div class="header__red-button-block header__red-button-block--bold">
+							<a href="tel:+78633200322">+7 (863) 320-03-22</a>
+							<a href="#" data-fls-button="" class="header__red-btn button button--red button--18" data-fls-popup-link="order">Записаться</a>
+						</div>
+						<a href="#" class="button button--blue button--icon-cart"></a>
+					</div>
+					<div class="header__bottom">
+						<div class="header__menu menu">
+							<nav class="menu__body">
+								<div class="menu__body-top">
+									<a href="#" class="menu__body-logo">
+										<picture>
+											<img alt="Симплекс" src="./assets/img/logo.webp">
+										</picture>
+									</a>
+									<button type="button" data-fls-menu="" class="menu__icon icon-menu icon-menu--gray">
+										<span></span>
+									</button>
+								</div>
+								<ul class="menu__list">
+									<li class="menu__item">
+										<button class="menu__btn button button--blue --icon-small-arrow">Пациентам</button>
+										<ul>
+											<li>
+												<a href="#">Анализы и цены</a>
+											</li>
+											<li>
+												<a href="#">Скрининг щитовидной железы</a>
+											</li>
+											<li>
+												<a href="#">Выезд на дом</a>
+											</li>
+											<li>
+												<a href="#">Диагностика сахарного диабета</a>
+											</li>
+											<li>
+												<a href="#">Жизнь без аллергии</a>
+											</li>
+											<li>
+												<a href="#">Диагностика функции печени</a>
+											</li>
+											<li>
+												<a href="#">Check-up программы</a>
+											</li>
+											<li>
+												<a href="#">Дородовая диагностика</a>
+											</li>
+											<li>
+												<a href="#">COVID-19</a>
+											</li>
+											<li>
+												<a href="#">После COVID-19</a>
+											</li>
+											<li>
+												<a href="#">Анализы на дому</a>
+											</li>
+											<li>
+												<a href="#">Бесконтактный анализ на COVID-19</a>
+											</li>
+											<li>
+												<a href="#">Планирование беременности</a>
+											</li>
+											<li>
+												<a href="#">Блог о здоровье</a>
+											</li>
+											<li>
+												<a href="#">Часто задаваемые вопросы</a>
+											</li>
+											<li>
+												<a href="#">Условия возврата</a>
+											</li>
+											<li>
+												<a href="#">Политика обработки персональных данных</a>
+											</li>
+											<li>
+												<a href="#">Информация по ОМС</a>
+											</li>
+											<li>
+												<a href="#">Пользовательское соглашение</a>
+											</li>
+											<li>
+												<a href="#">Условия договора оферты</a>
+											</li>
+										</ul>
+									</li>
+									<li class="menu__item">
+										<button class="menu__btn button button--blue --icon-small-arrow">Организациям</button>
+										<ul>
+											<li>
+												<a href="#">Анализы и цены</a>
+											</li>
+											<li>
+												<a href="#">Скрининг щитовидной железы</a>
+											</li>
+											<li>
+												<a href="#">Выезд на дом</a>
+											</li>
+											<li>
+												<a href="#">Диагностика сахарного диабета</a>
+											</li>
+											<li>
+												<a href="#">Жизнь без аллергии</a>
+											</li>
+											<li>
+												<a href="#">Диагностика функции печени</a>
+											</li>
+										</ul>
+									</li>
+									<li class="menu__item">
+										<button class="menu__btn button button--blue --icon-small-arrow">О нас</button>
+										<ul>
+											<li>
+												<a href="#">Анализы и цены</a>
+											</li>
+											<li>
+												<a href="#">Скрининг щитовидной железы</a>
+											</li>
+											<li>
+												<a href="#">Выезд на дом</a>
+											</li>
+											<li>
+												<a href="#">Диагностика сахарного диабета</a>
+											</li>
+											<li>
+												<a href="#">Жизнь без аллергии</a>
+											</li>
+											<li>
+												<a href="#">Диагностика функции печени</a>
+											</li>
+										</ul>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__btn button button--blue">Covid-19</a>
+									</li>
+									<li class="menu__item">
+										<button class="menu__btn button button--blue --icon-small-arrow">Медосмотры</button>
+										<ul>
+											<li>
+												<a href="#">Анализы и цены</a>
+											</li>
+											<li>
+												<a href="#">Скрининг щитовидной железы</a>
+											</li>
+											<li>
+												<a href="#">Выезд на дом</a>
+											</li>
+											<li>
+												<a href="#">Диагностика сахарного диабета</a>
+											</li>
+											<li>
+												<a href="#">Жизнь без аллергии</a>
+											</li>
+											<li>
+												<a href="#">Диагностика функции печени</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+								<div class="menu__body-info">
+									<div class="menu__body-info-wrapper menu__body-info-wrapper--first">
+										<div class="header__red-button-block">
+											<a href="#">
+												<img src="./assets/img/icons/whatsapp.svg" alt="whatsapp">
+												Whatsapp
+											</a>
+											<a href="#" data-fls-button="" data-fls-popup-link="order" class="header__red-btn button button--red button--18">Написать нам</a>
+										</div>
+									</div>
+									<div class="menu__body-info-wrapper menu__body-info-wrapper--second">
+										<div class="header__working-hours">
+											<p>Пн-Пт с 8:00 до 18:00</p>
+											<p>Сб-Вс - выходные</p>
+										</div>
+										<div class="header__red-button-block header__red-button-block--bold">
+											<a href="tel:+78633200322">+7 (863) 320-03-22</a>
+											<a href="#" data-fls-button="" data-fls-popup-link="order" class="header__red-btn button button--red button--18">Записаться</a>
+										</div>
+									</div>
+									<a href="#" class="button menu__cart button--blue button--icon-cart">Перейти в корзину</a>
+								</div>
+							</nav>
+							<a href="index.html" class="menu__logo">
+								<picture>
+									<img alt="Симплекс" src="./assets/img/logo.webp">
+								</picture>
+							</a>
+							<form action="#" data-fls-form="ajax" class="menu__search">
+								<button type="submit" class="menu__search-btn button button--blue button--icon-search"></button>
+								<input type="text" name="form[]" data-fls-input="" autocomplete="off" required data-fls-form-errtext="" placeholder="Поиск по анализам" class="menu__input input">
+							</form>
+							<button type="button" data-fls-menu="" class="menu__icon icon-menu icon-menu--main">
+								<span></span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main class="page">
+				<div class="page__container">
+					<div data-fls-breadcrumbs="">
+						<ul>
+							<li>
+								<a href="index.html">Главная</a>
+							</li>
+							<li>
+								<a href="#">Анализы в Ростове-на-Дону</a>
+							</li>
+							<li>Блог</li>
+						</ul>
+					</div>
+					<section class="blog">
+						<div class="blog__main">
+							<div data-fls-articlecard="" class="article-card">
+								<div class="article-card__img-block">
+									<p class="article-card__date">19.05.2025</p>
+									<picture>
+										<img alt="Image" src="./assets/img/article-bg.webp">
+									</picture>
+								</div>
+								<p class="article-card__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<div class="article-card__text">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum lectus eu
+			bibendum aliquet. Aliquam nunc
+			nisl, luctus id elit eget, euismod ullamcorper diam. Vivamus et arcu molestie, molestie erat eu,
+			feugiat nunc.
+									</p>
+								</div>
+								<a href="#" data-fls-button="" class="article-card__btn button button--blue button--18">Подробнее</a>
+							</div>
+							<div data-fls-articlecard="" class="article-card">
+								<div class="article-card__img-block">
+									<p class="article-card__date">19.05.2025</p>
+									<picture>
+										<img alt="Image" src="./assets/img/article-bg.webp">
+									</picture>
+								</div>
+								<p class="article-card__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<div class="article-card__text">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum lectus eu
+			bibendum aliquet. Aliquam nunc
+			nisl, luctus id elit eget, euismod ullamcorper diam. Vivamus et arcu molestie, molestie erat eu,
+			feugiat nunc.
+									</p>
+								</div>
+								<a href="#" data-fls-button="" class="article-card__btn button button--blue button--18">Подробнее</a>
+							</div>
+							<div data-fls-articlecard="" class="article-card">
+								<div class="article-card__img-block">
+									<p class="article-card__date">19.05.2025</p>
+									<picture>
+										<img alt="Image" src="./assets/img/article-bg.webp">
+									</picture>
+								</div>
+								<p class="article-card__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<div class="article-card__text">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum lectus eu
+			bibendum aliquet. Aliquam nunc
+			nisl, luctus id elit eget, euismod ullamcorper diam. Vivamus et arcu molestie, molestie erat eu,
+			feugiat nunc.
+									</p>
+								</div>
+								<a href="#" data-fls-button="" class="article-card__btn button button--blue button--18">Подробнее</a>
+							</div>
+							<div data-fls-articlecard="" class="article-card">
+								<div class="article-card__img-block">
+									<p class="article-card__date">19.05.2025</p>
+									<picture>
+										<img alt="Image" src="./assets/img/article-bg.webp">
+									</picture>
+								</div>
+								<p class="article-card__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<div class="article-card__text">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum lectus eu
+			bibendum aliquet. Aliquam nunc
+			nisl, luctus id elit eget, euismod ullamcorper diam. Vivamus et arcu molestie, molestie erat eu,
+			feugiat nunc.
+									</p>
+								</div>
+								<a href="#" data-fls-button="" class="article-card__btn button button--blue button--18">Подробнее</a>
+							</div>
+							<div data-fls-articlecard="" class="article-card">
+								<div class="article-card__img-block">
+									<p class="article-card__date">19.05.2025</p>
+									<picture>
+										<img alt="Image" src="./assets/img/article-bg.webp">
+									</picture>
+								</div>
+								<p class="article-card__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<div class="article-card__text">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum lectus eu
+			bibendum aliquet. Aliquam nunc
+			nisl, luctus id elit eget, euismod ullamcorper diam. Vivamus et arcu molestie, molestie erat eu,
+			feugiat nunc.
+									</p>
+								</div>
+								<a href="#" data-fls-button="" class="article-card__btn button button--blue button--18">Подробнее</a>
+							</div>
+							<div data-fls-articlecard="" class="article-card">
+								<div class="article-card__img-block">
+									<p class="article-card__date">19.05.2025</p>
+									<picture>
+										<img alt="Image" src="./assets/img/article-bg.webp">
+									</picture>
+								</div>
+								<p class="article-card__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<div class="article-card__text">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum lectus eu
+			bibendum aliquet. Aliquam nunc
+			nisl, luctus id elit eget, euismod ullamcorper diam. Vivamus et arcu molestie, molestie erat eu,
+			feugiat nunc.
+									</p>
+								</div>
+								<a href="#" data-fls-button="" class="article-card__btn button button--blue button--18">Подробнее</a>
+							</div>
+							<div data-fls-articlecard="" class="article-card">
+								<div class="article-card__img-block">
+									<p class="article-card__date">19.05.2025</p>
+									<picture>
+										<img alt="Image" src="./assets/img/article-bg.webp">
+									</picture>
+								</div>
+								<p class="article-card__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<div class="article-card__text">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum lectus eu
+			bibendum aliquet. Aliquam nunc
+			nisl, luctus id elit eget, euismod ullamcorper diam. Vivamus et arcu molestie, molestie erat eu,
+			feugiat nunc.
+									</p>
+								</div>
+								<a href="#" data-fls-button="" class="article-card__btn button button--blue button--18">Подробнее</a>
+							</div>
+							<div data-fls-articlecard="" class="article-card">
+								<div class="article-card__img-block">
+									<p class="article-card__date">19.05.2025</p>
+									<picture>
+										<img alt="Image" src="./assets/img/article-bg.webp">
+									</picture>
+								</div>
+								<p class="article-card__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<div class="article-card__text">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum lectus eu
+			bibendum aliquet. Aliquam nunc
+			nisl, luctus id elit eget, euismod ullamcorper diam. Vivamus et arcu molestie, molestie erat eu,
+			feugiat nunc.
+									</p>
+								</div>
+								<a href="#" data-fls-button="" class="article-card__btn button button--blue button--18">Подробнее</a>
+							</div>
+							<div data-fls-articlecard="" class="article-card">
+								<div class="article-card__img-block">
+									<p class="article-card__date">19.05.2025</p>
+									<picture>
+										<img alt="Image" src="./assets/img/article-bg.webp">
+									</picture>
+								</div>
+								<p class="article-card__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<div class="article-card__text">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum lectus eu
+			bibendum aliquet. Aliquam nunc
+			nisl, luctus id elit eget, euismod ullamcorper diam. Vivamus et arcu molestie, molestie erat eu,
+			feugiat nunc.
+									</p>
+								</div>
+								<a href="#" data-fls-button="" class="article-card__btn button button--blue button--18">Подробнее</a>
+							</div>
+						</div>
+						<div data-fls-pagination="" class="pagination">
+							<div data-fls-button="" class="pagination__btn pagination__btn-prev button button--blue button--icon-arrow"></div>
+							<ul>
+								<li class="--active">
+									<a href="#">1</a>
+								</li>
+								<li>
+									<a href="#">2</a>
+								</li>
+								<li>
+									<a href="#">3</a>
+								</li>
+								<li>
+									<a href="#">4</a>
+								</li>
+							</ul>
+							<a href="#" data-fls-button="" class="pagination__btn button button--blue button--icon-arrow"></a>
+						</div>
+					</section>
+				</div>
+			</main>
+			<footer data-fls-footer="" class="footer">
+				<div class="footer__container">
+					<div class="footer__info-block">
+						<div class="footer__info-logo-block">
+							<a href="index.html" class="footer__logo">
+								<picture>
+									<img alt="Симплекс" src="./assets/img/logo.webp">
+								</picture>
+							</a>
+							<div class="footer__red-button-block footer__red-button-block--bold">
+								<a href="tel:+78633200322">+7 (863) 320-03-22</a>
+								<a href="#" data-fls-button="" class="footer__red-btn button button--red button--18" data-fls-popup-link="order">Записаться</a>
+							</div>
+						</div>
+						<div class="footer__info-wrapper" data-fls-dynamic=".footer__nav-wrapper--mobile, 1000, 1,">
+							<div class="footer__red-button-block footer__red-button-block--bold">
+								<a href="tel:+78633200322">+7 (863) 320-03-22</a>
+								<a href="#" data-fls-button="" class="footer__red-btn button button--red button--18" data-fls-popup-link="order">Записаться</a>
+							</div>
+							<div class="footer__red-button-block">
+								<a href="#">
+									<img src="./assets/img/icons/whatsapp.svg" alt="whatsapp">
+									Whatsapp
+								</a>
+								<a href="#" data-fls-button="" class="footer__red-btn button button--red button--18" data-fls-popup-link="order">Написать нам</a>
+							</div>
+							<div class="footer__city">
+								<p class="footer__city-title">Ростов-на-Дону</p>
+								<p class="footer__adress adress-link">ул. Варфоломеева 243а</p>
+								<a href="https://yandex.ru/maps/39/rostov-na-donu/house/ulitsa_varfolomeyeva_243a/Z0AYcQZgSkQCQFptfX5yc3pkYw==/?ll=39.707638%2C47.232061&z=16" target="_blank" class="footer__city-btn schema-link">Схема проезда</a>
+							</div>
+							<div class="footer__working-hours">
+								<p>Пн-Пт с 8:00 до 18:00</p>
+								<p>Сб-Вс - выходные</p>
+							</div>
+							<a href="https://web-ra.com/" target="_blank" class="footer__made-by">
+								Разработано в Web-ra.com
+								<img src="./assets/img/webra.svg" alt="Web-ra">
+							</a>
+						</div>
+					</div>
+					<nav class="footer__nav-block">
+						<div class="footer__nav-wrapper">
+							<p>Пациентам</p>
+							<ul>
+								<li>
+									<a href="#">Анализы и цены</a>
+								</li>
+								<li>
+									<a href="#">Скрининг щитовидной железы</a>
+								</li>
+								<li>
+									<a href="#">Выезд на дом</a>
+								</li>
+								<li>
+									<a href="#">Диагностика сахарного диабета</a>
+								</li>
+								<li>
+									<a href="#">Жизнь без аллергии</a>
+								</li>
+								<li>
+									<a href="#">Диагностика функции печени</a>
+								</li>
+								<li>
+									<a href="#">Check-up программы</a>
+								</li>
+								<li>
+									<a href="#">Дородовая диагностика</a>
+								</li>
+								<li>
+									<a href="#">COVID-19</a>
+								</li>
+								<li>
+									<a href="#">После COVID-19</a>
+								</li>
+								<li>
+									<a href="#">Анализы на дому</a>
+								</li>
+								<li>
+									<a href="#">Бесконтактный анализ на COVID-19</a>
+								</li>
+								<li>
+									<a href="#">Планирование беременности</a>
+								</li>
+								<li>
+									<a href="#">Блог о здоровье</a>
+								</li>
+								<li>
+									<a href="#">Часто задаваемые вопросы</a>
+								</li>
+								<li>
+									<a href="#">Условия возврата</a>
+								</li>
+								<li>
+									<a href="#">Политика обработки персональных данных</a>
+								</li>
+								<li>
+									<a href="#">Информация по ОМС</a>
+								</li>
+								<li>
+									<a href="#">Пользовательское соглашение</a>
+								</li>
+								<li>
+									<a href="#">Условия договора оферты</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+					<nav class="footer__nav-block">
+						<div class="footer__nav-wrapper">
+							<p>Организациям</p>
+							<ul>
+								<li>
+									<a href="#">Частным медицинским центрам</a>
+								</li>
+								<li>
+									<a href="#">Государственным заказчикам</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__nav-wrapper">
+							<p>О нас</p>
+							<ul>
+								<li>
+									<a href="#">О компании</a>
+								</li>
+								<li>
+									<a href="#">Отзывы</a>
+								</li>
+								<li>
+									<a href="#">Вакансии</a>
+								</li>
+								<li>
+									<a href="#">Новости</a>
+								</li>
+								<li>
+									<a href="#">Статьи</a>
+								</li>
+								<li>
+									<a href="#">Карта сайта</a>
+								</li>
+								<li>
+									<a href="#">Контакты</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__nav-wrapper">
+							<p>Медосмотры</p>
+						</div>
+					</nav>
+					<nav class="footer__nav-block footer__nav-block--mobile">
+						<div class="footer__nav-wrapper footer__nav-wrapper--mobile">
+							<p>Контакты</p>
+						</div>
+					</nav>
+				</div>
+			</footer>
+		</div>
+		<div data-fls-popup="order" aria-hidden="true" class="popup">
+			<div data-fls-popup-wrapper="" class="popup__wrapper">
+				<div data-fls-popup-body="" class="popup__body">
+					<button data-fls-popup-close="" type="button" class="popup__close --icon-cross"></button>
+					<div data-fls-popup-content="" class="popup__main">
+						<p class="popup__title">Оформить заказ</p>
+						<p class="popup__subtitle">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget justo nec massa
+					sollicitudin mattis.
+						</p>
+						<form action="#" data-fls-form="ajax" class="form-block__main">
+							<input data-fls-input="" required data-fls-form-errtext="" autocomplete="off" type="text" name="form[]" placeholder="Введите ваши ФИО" class="input">
+							<input data-fls-input="" required data-fls-form-errtext="" data-fls-input-mask="+7 (999) 999-9999" autocomplete="off" type="text" name="form[]" placeholder="Введите ваш телефон" class="input">
+							<textarea data-fls-input="" required data-fls-form-errtext="" autocomplete="off" name="form[]" placeholder="Введите ваш вопрос" class="input"></textarea>
+							<button class="form-block__button button button--red">Отправить</button>
+							<p class="form-block__info">
+								Нажимая на «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь
+								<a href="#">с
+							политикой конфиденциальности</a>
+							</p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div data-fls-popup="thanks" aria-hidden="true" class="popup">
+			<div data-fls-popup-wrapper="" class="popup__wrapper">
+				<div data-fls-popup-body="" class="popup__body">
+					<button data-fls-popup-close="" type="button" class="popup__close --icon-cross"></button>
+					<div data-fls-popup-content="" class="popup__main">
+						<p class="popup__title">Ваше сообщение отправлено</p>
+						<button data-fls-popup-close="" class="form-block__button button button--red button--20">Закрыть</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
