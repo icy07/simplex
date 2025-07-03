@@ -4223,17 +4223,25 @@ if (navArr) {
 const cityData = {
   "Ростов-на-Дону": {
     schema: "https://yandex.ru/maps/39/rostov-na-donu/house/ulitsa_varfolomeyeva_243a/Z0AYcQZgSkQCQFptfX5yc3pkYw==/?ll=39.707638%2C47.232061&z=16",
-    adress: "ул. Варфоломеева 243а"
+    adress: "ул. Варфоломеева 243а",
+    class: "_rostov"
   },
   Краснодар: {
     schema: "https://yandex.ru/maps/org/simpleks/1766206511/?ll=38.963922%2C45.013765&z=17",
-    adress: "ул. Красина, 9/1"
+    adress: "ул. Красина, 9/1",
+    class: "_krasnodar"
   }
 };
 function updateCityData(select) {
   const selectedCity = select.value;
   const data = cityData[selectedCity];
   if (data) {
+    const menuList = document.querySelector(".menu__list");
+    if (menuList) {
+      menuList.classList.remove("_krasnodar");
+      menuList.classList.remove("_rostov");
+      menuList.classList.add(data.class);
+    }
     const schemaLink = document.querySelectorAll(".schema-link");
     if (schemaLink) {
       schemaLink.forEach((e) => {

@@ -443,6 +443,12 @@ body {
   align-items: center;
   gap: 0.5rem;
 }
+.menu__list._rostov .menu__item--krasnodar {
+  display: none;
+}
+.menu__list._krasnodar .menu__item--rostov {
+  display: none;
+}
 .menu__item {
   position: relative;
 }
@@ -683,15 +689,16 @@ body {
   display: flex;
   flex-direction: column;
 }
-.footer__nav-wrapper > p {
+.footer__nav-wrapper > p,
+.footer__nav-wrapper > a {
   font-weight: 600;
   margin-bottom: 1em;
 }
+.footer__nav-wrapper a {
+  transition: 0.2s;
+}
 .footer__nav-wrapper ul li:not(:last-child) {
   margin-bottom: 0.75rem;
-}
-.footer__nav-wrapper ul li a {
-  transition: 0.2s;
 }
 .footer__nav-wrapper--mobile {
   height: 100%;
@@ -1243,7 +1250,8 @@ body::after {
   .footer__nav-block {
     gap: 2.5rem;
   }
-  .footer__nav-wrapper > p {
+  .footer__nav-wrapper > p,
+  .footer__nav-wrapper > a {
     font-size: 1.25rem;
   }
   .footer__nav-wrapper ul li a {
@@ -1430,7 +1438,8 @@ body::after {
   .footer__nav-block {
     gap: clamp( 2.5rem , 1.63793103448125rem  +  4.3103448276vw , 5.625rem );
   }
-  .footer__nav-wrapper > p {
+  .footer__nav-wrapper > p,
+  .footer__nav-wrapper > a {
     font-size: clamp( 1.25rem , 1.18103448275625rem  +  0.3448275862vw , 1.5rem );
   }
   .footer__nav-wrapper ul li a {
@@ -1878,7 +1887,8 @@ body::after {
   .footer__nav-block {
     gap: 5.625rem;
   }
-  .footer__nav-wrapper > p {
+  .footer__nav-wrapper > p,
+  .footer__nav-wrapper > a {
     font-size: 1.5rem;
   }
   .footer__nav-wrapper ul li a {
@@ -1998,7 +2008,7 @@ body::after {
   .footer__made-by:hover {
     color: #dd2a1b;
   }
-  .footer__nav-wrapper ul li a:hover {
+  .footer__nav-wrapper a:hover {
     color: #0e6bad;
   }
   .button:hover {
