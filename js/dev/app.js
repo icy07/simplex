@@ -4232,7 +4232,7 @@ const cityData = {
   },
   Краснодар: {
     schema: "https://yandex.ru/maps/org/simpleks/1766206511/?ll=38.963922%2C45.013765&z=17",
-    adress: "ул. Красина, 9/1",
+    adress: "ул. Красина, 9/1, к.3",
     medLink: "https://medosmotr-krasnodar.ru",
     workingHours: `
 			<p>Пн-Пт с 8:00 до 18:00</p>
