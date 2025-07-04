@@ -4224,30 +4224,43 @@ const cityData = {
   "Ростов-на-Дону": {
     schema: "https://yandex.ru/maps/39/rostov-na-donu/house/ulitsa_varfolomeyeva_243a/Z0AYcQZgSkQCQFptfX5yc3pkYw==/?ll=39.707638%2C47.232061&z=16",
     adress: "ул. Варфоломеева 243а",
-    class: "_rostov"
+    medLink: "https://medosmotr-rostov.ru",
+    workingHours: `
+			<p>Пн-Пт с 8:00 до 18:00</p>
+			<p>Сб-Вс - выходные</p>
+		`
   },
   Краснодар: {
     schema: "https://yandex.ru/maps/org/simpleks/1766206511/?ll=38.963922%2C45.013765&z=17",
     adress: "ул. Красина, 9/1",
-    class: "_krasnodar"
+    medLink: "https://medosmotr-krasnodar.ru",
+    workingHours: `
+			<p>Пн-Пт с 8:00 до 18:00</p>
+			<p>Сб с 9:00 до 13:00</p>
+			<p>Вс - выходные</p>
+		`
   }
 };
 function updateCityData(select) {
   const selectedCity = select.value;
   const data = cityData[selectedCity];
   if (data) {
-    const menuList = document.querySelector(".menu__list");
-    if (menuList) {
-      menuList.classList.remove("_krasnodar");
-      menuList.classList.remove("_rostov");
-      menuList.classList.add(data.class);
-    }
     const schemaLink = document.querySelectorAll(".schema-link");
     if (schemaLink) {
       schemaLink.forEach((e) => {
         e.href = data.schema;
       });
     }
+    const medosmotrLink = document.querySelectorAll(".medosmotr-link");
+    if (medosmotrLink) {
+      medosmotrLink.forEach((e) => {
+        e.href = data.medLink;
+      });
+    }
+    const workingHours = document.querySelectorAll(".working-hours");
+    workingHours.forEach((e) => {
+      e.innerHTML = data.workingHours;
+    });
     const adressLink = document.querySelectorAll(".adress-link");
     if (adressLink) {
       adressLink.forEach((e) => {

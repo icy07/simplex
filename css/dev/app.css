@@ -443,12 +443,6 @@ body {
   align-items: center;
   gap: 0.5rem;
 }
-.menu__list._rostov .menu__item--krasnodar {
-  display: none;
-}
-.menu__list._krasnodar .menu__item--rostov {
-  display: none;
-}
 .menu__item {
   position: relative;
 }
